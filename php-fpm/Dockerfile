@@ -27,5 +27,7 @@ EXPOSE	80 443
 ADD	supervisor_nginx.conf /etc/supervisor.conf.d/nginx.conf
 ADD	supervisor_php-fpm.conf /etc/supervisor.conf.d/php-fpm.conf
 
+WORKDIR ${APP_DIR}
 ONBUILD ADD . ${APP_DIR} 
 ONBUILD RUN chown -R nginx:nginx ${APP_DIR}
+
