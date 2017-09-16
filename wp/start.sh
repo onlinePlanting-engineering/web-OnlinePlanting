@@ -8,9 +8,9 @@ DB_USER=${DB_USER:=admin}
 DB_PASS=${DB_PASS:=planting}
 DB_NAME=${DB_NAME:=planting2}
 
-docker build -t planting/wordpress:4.8 .
+#docker build -t planting/wordpress:4.8 .
 
-docker run -d -p 8081:80 --name wordpress \
+docker run -d -p 8080:80 --name wordpress \
 	--link dbserver:db \
 	-v /app \
 	-e WORDPRESS_DB_HOST=${DB_HOST}:${DB_PORT} \

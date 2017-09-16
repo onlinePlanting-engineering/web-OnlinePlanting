@@ -3,4 +3,4 @@
 
 docker stop wordpress 
 docker rm wordpress
-#docker image rm planting/wordpress:4.8
+docker image rm planting/wordpress:4.8

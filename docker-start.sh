@@ -3,7 +3,7 @@
 
 cd centos7
 echo "Start centos7 -------------"
-./start.sh
+./build.sh
 
 cd ../mysql  
 echo "start mysql----------------"
@@ -16,7 +16,7 @@ echo "start web ---------------------"
 
 cd ../php-fpm
 echo "start php-fpm -------------------"
-./start.sh
+./build.sh
 
 cd ../wp
 echo "start wordpress -----------------"
