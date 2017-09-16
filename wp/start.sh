@@ -11,7 +11,7 @@ CUR_DIR=$(cd `dirname $0`; pwd)
 
 #docker build -t planting/wordpress:4.8 .
 
-docker run -d -p 8080:80 --name wordpress \
+docker run -d --name wordpress \
 	--link dbserver:db \
 	-v ${CUR_DIR}:/app \
 	-e WORDPRESS_DB_HOST=${DB_HOST}:${DB_PORT} \
