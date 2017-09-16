@@ -6,5 +6,5 @@ docker run --name nginx-server \
 -v /www/static \
 --volumes-from api-server \
 --link wordpress:wp \
--p 7777:8080 \
+-p 7777:80 \
 -d nginx
